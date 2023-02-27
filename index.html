@@ -6,14 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display&family=Epilogue:ital,wght@0,500;1,100&family=Fraunces:opsz@9..144&family=Lexend+Deca&family=Noto+Sans&display=swap');
+    </style>
 </head>
 <body>
     <div class="container mx-auto w-full bg-white">
-        <header class="flex justify-between items-center py-5 px-10">
+        <header class="flex justify-between items-center py-5 xl:px-16 lg::px-[50px]">
             <div class="flex items-center space-x-5 py-2">
                 <img src="./images/logo.svg" alt="">
             </div>
-            <nav class="flex items-center gap-5 text-gray-500">
+            <nav class="hidden lg:flex items-center gap-5 text-gray-500">
                 <select class="font-medium focus:outline none hover:text-gray-900">
                     <option>Features</option>
                     <option>Todo List</option>
@@ -30,11 +33,30 @@
                 <p class="font-medium focus:outline none hover:text-gray-900">Careers</p>
                 <p class="font-medium focus:outline none hover:text-gray-900">About</p>
             </nav>
-            <div class="flex justify-between items-center">
-            <p class="font-medium focus:outline-none hover:text-gray-900">Login</p>
-            <p class="font-medium focus:outline-none hover:text-gray-900 borderr bprder-gray-500 hover:border-gray-900 px-4 py-2 rounded-xl">Register</p>
-        </header>
+            <div class="hidden lg:flex justify-between items-center">
+                <p class="font-medium focus:outline-none hover:text-gray-900">Login</p>
+                <p class="font-medium focus:outline-none hover:text-gray-900 borderr bprder-gray-500 hover:border-gray-900 px-4 py-2 rounded-xl">Register</p>
             </div>
+            <!-- <img class="Lg:hidden" src="./images/icon-menu.svg" alt=""> -->
+        </header>
+        <div class="xl:mx-[100px] lg:mx-[50px] my-1">
+            <div class="container mx-auto flex gap-[180px] items-end">
+                <article class="">
+                    <p class="text-[60px] font-bold text-gray-900 mb-10 leading-[75px] w-[25rem]">Make remote work</p>
+                    <p class="text-gray-500 mb-16">Get your team in sync, no matter your location. Streamline processes, create team rituals, and watch productivity soar.</p>
+                    <button class="decoration-none px-6 py-3 text-white bg-black rounded-xl border border-black hover:bg-white hover:text-black duration-500">Learn More</button>
+                    <div class="mt-[100px] flex items-center gap-8">
+                        <img src="./images/client-databiz.svg" class="h-fit">
+                        <img src="./images/client-audiophile.svg" class="h-fit">
+                        <img src="./images/client-meet.svg" class="h-fit">
+                        <img src="./images/client-maker.svg" class="h-fit">
+                    </div>
+                </article>
+                <div>
+                    <img src="./images/image-hero-desktop.png" alt="">
+                </div>
+            </div>
+        </div>
     </div>
 </body>
 </html>
